@@ -4,7 +4,7 @@ This example illustrates how to deploy an OWASP Juiceshop docker container on a 
 
 > OWASP Juice Shop is probably the most modern and sophisticated insecure web application! It can be used in security trainings, awareness demos, CTFs and as a guinea pig for security tools! Juice Shop encompasses vulnerabilities from the entire OWASP Top Ten along with many other security flaws found in real-world applications!
 
-The [juiceshop_stackscript.sh](./juiceshop_stackscript.sh) StackScript is responsible for installing an OWASP Juiceshop docker container and exposing it on port 80. this staskcript allows to [secure your server](https://www.linode.com/docs/products/compute/compute-instances/guides/set-up-and-secure/) as per Linode guide.
+The [juiceshop_stackscript.sh](./juiceshop_stackscript.sh) StackScript is responsible for installing an OWASP Juiceshop docker container and exposing it on port 80. This staskcript allows to [secure your server](https://www.linode.com/docs/products/compute/compute-instances/guides/set-up-and-secure/) as per Linode guide.
 
 # Usage
 
@@ -38,7 +38,7 @@ module "juiceshop_linode_stackscripts" {
 ```
 Note: 
 - the root password is auto generated via `random_string` resource.
-- StackScripts support user defined data. A StackScript can use the UDF tag to create a variable whose value must be provided by the user of the script. This allows users to customize the behavior of a StackScript on a per-deployment basis. Any required UDF variable can be defined using the `stackscript_data` argument.
+- StackScripts support user defined data. A StackScript can use the UDF tag to create a variable whose value must be provided by the user of the script. This allows users to customize the behavior of a StackScript on a per-deployment basis. Any required UDF variable can be defined using the `stackscript_data` argument. In this case you will define the hostname to reach your juiceshop application, you define a new user and associated password to create on your Linode instance for security reason and you will specify the ssh public key to use for this user (we are using the same ssh key as per root user here).
 
 ## Initialize, Plan, and Apply the Terraform Configuration
 
