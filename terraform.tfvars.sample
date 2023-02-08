@@ -1,0 +1,17 @@
+token = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+key       = "~/.ssh/id_rsa.pub"
+key_label = "my-ssh-key"
+label     = "my-linode"
+region    = "us-east"
+type      = "g6-standard-1"
+image     = "linode/debian11"
+
+root_pass               = "Linode@123"
+stackscript_label       = "hello-world-stackscript"
+stackscript_description = "A base deployment for Debian11 displaying Hello World message"
+stackscript_rev_note    = "First revision of my StackScript created with the Linode Terraform provider."
+stackscript_script      =   <<EOF
+#!/bin/bash
+echo 'Hello World'
+EOF
