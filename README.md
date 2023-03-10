@@ -56,6 +56,7 @@ module "example" {
 
 - [juiceshop](./examples/juiceshop) - This example illustrates how to deploy an OWASP Juiceshop docker container on a compute Linode instance using Terraform.
 - [wordpress](./examples/wordpress) - This example illustrates how to deploy a WordPress Site on a compute Linode instance using Terraform.
+- [flexorigin](./examples/flexorigin) - This example illustrates how to deploy a Flexible Origin on a compute Linode instance using Terraform.
 
 ## Prerequisite
 Linode Terraform provider requires an API access token. Follow the [Getting Started with the Linode API guide](https://www.linode.com/docs/products/tools/api/get-started/#get-an-access-token) to obtain a token.
